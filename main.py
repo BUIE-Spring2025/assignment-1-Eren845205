@@ -12,4 +12,10 @@ def int_to_roman(num):
     }
 
     for val in sorted(val_to_rom.keys(), reverse=True):
-        
+        str1 = ""
+        while num >= val:
+            str1 += val_to_rom[val]
+            num -= val
+        return str1
+    
+    
