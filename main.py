@@ -16,5 +16,3 @@ def int_to_roman(num):
             str1 += val_to_rom[val]
             num -= val
     return str1
-
-print(int_to_roman(3))
